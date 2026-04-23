@@ -33,3 +33,8 @@
   from = "/wa"
   to = "https://wa.me/601133151341"
   status = 302
+
+[[redirects]]
+  from = "/start"
+  to = "/start.html"
+  status = 200
