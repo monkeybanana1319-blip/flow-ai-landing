@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================ -->
+<!-- SEO + 社交分享 META TAGS -->
+<!-- ============================================ -->
+
+<title>Flow AI · 资料收集表 ✨</title>
+<meta name="description" content="欢迎成为 Flow AI 体验官 ✨ 填完资料后 48h 内交付你的专属 landing page。RM168 首批10位限定。">
+
+<!-- Open Graph (WhatsApp / FB / LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Flow AI · Landing Page 资料收集 ✨">
+<meta property="og:description" content="欢迎体验官 ✨ 填完资料 · 48h 交付你的专属 landing page。">
+<meta property="og:image" content="https://flow-ai-consulting.netlify.app/assets/og-image-v2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://flow-ai-consulting.netlify.app/start">
+<meta property="og:site_name" content="Flow AI Consulting">
+<meta property="og:locale" content="zh_CN">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flow AI · Landing Page 资料收集 ✨">
+<meta name="twitter:description" content="欢迎体验官 ✨ 填完资料 · 48h 交付。">
+<meta name="twitter:image" content="https://flow-ai-consulting.netlify.app/assets/og-image-v2.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f5f1ea;--bg-alt:#ece5d8;--ink:#1a1613;--ink-soft:#4a413a;
+  --muted:#8a7f74;--gold:#b08d57;--gold-deep:#8a6a3d;--gold-light:#d4b584;
+  --line:#d8cfbf;
+}
+html,body{min-height:100vh;background:var(--bg)}
+body{font-family:'Noto Serif SC',sans-serif;color:var(--ink);line-height:1.6}
+
+.top-brand{
+  background:linear-gradient(180deg,var(--bg) 0%,var(--bg-alt) 100%);
+  padding:40px 20px 30px;text-align:center;
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.top-brand::before{
+  content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);
+  width:400px;height:200px;
+  background:radial-gradient(ellipse,rgba(176,141,87,.12),transparent 60%);
+  pointer-events:none;
+}
+.brand-content{max-width:640px;margin:0 auto;position:relative;z-index:2}
+.brand-logo{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--gold-deep);font-size:22px;letter-spacing:3px;
+  margin-bottom:20px;font-weight:500;
+}
+.brand-logo span{
+  color:var(--ink);font-weight:700;letter-spacing:4px;
+  font-style:normal;font-size:20px;
+}
+.brand-logo::before,.brand-logo::after{
+  content:'';width:30px;height:1px;background:var(--gold);
+}
+.welcome-badge{
+  display:inline-block;padding:6px 16px;
+  background:var(--ink);color:var(--gold-light);
+  font-family:'Inter',sans-serif;font-size:11px;
+  letter-spacing:3px;text-transform:uppercase;font-weight:500;
+  margin-bottom:20px;
+}
+.welcome-title{
+  font-family:'Noto Serif SC',serif;font-weight:700;
+  font-size:clamp(26px,4vw,38px);line-height:1.25;
+  margin-bottom:14px;letter-spacing:-.01em;
+}
+.welcome-title em{
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--gold-deep);font-weight:500;
+}
+.welcome-sub{
+  font-size:15px;color:var(--ink-soft);font-weight:400;
+  line-height:1.8;max-width:500px;margin:0 auto 20px;
+}
+.welcome-meta{
+  display:flex;justify-content:center;gap:20px;flex-wrap:wrap;
+  padding-top:16px;border-top:1px solid var(--line);margin-top:20px;
+}
+.meta-item{
+  font-family:'Inter',sans-serif;font-size:11px;
+  letter-spacing:2px;color:var(--muted);text-transform:uppercase;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.meta-item strong{
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--gold-deep);font-size:16px;font-weight:500;letter-spacing:0;
+}
+
+.form-wrap{
+  background:var(--bg);padding:20px 10px 60px;
+  min-height:600px;position:relative;
+}
+.tally-iframe{
+  width:100%;max-width:780px;margin:0 auto;display:block;
+  border:none;background:transparent;min-height:1400px;
+  box-shadow:0 10px 40px -10px rgba(26,22,19,.08);
+}
+
+.bottom-sig{
+  background:var(--ink);color:rgba(245,241,234,.7);
+  padding:30px 20px;text-align:center;
+  font-family:'Inter',sans-serif;font-size:11px;letter-spacing:2px;
+}
+.bottom-sig .logo-s{
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--gold);font-size:16px;letter-spacing:3px;
+  margin-bottom:8px;font-weight:500;
+}
+.bottom-sig .logo-s span{
+  color:var(--bg);letter-spacing:4px;font-weight:700;
+  font-style:normal;margin-right:8px;
+}
+
+.loading-overlay{
+  position:absolute;inset:0;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:20px;transition:opacity .5s;
+}
+.loading-overlay.hidden{opacity:0;pointer-events:none}
+.spinner{
+  width:30px;height:30px;
+  border:2px solid var(--line);border-top:2px solid var(--gold-deep);
+  border-radius:50%;animation:spin 0.8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  color:var(--gold-deep);font-size:18px;letter-spacing:2px;
+}
+
+@media(max-width:600px){
+  .brand-logo{font-size:18px;letter-spacing:2px}
+  .brand-logo span{font-size:16px}
+  .welcome-title{font-size:24px}
+  .welcome-sub{font-size:14px}
+  .welcome-meta{gap:14px}
+}
+</style>
+<script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>
+
+<div class="top-brand">
+  <div class="brand-content">
+    <div class="brand-logo"><span>FLOW AI</span>Consulting</div>
+    <div class="welcome-badge">体验官专属</div>
+    <h1 class="welcome-title">
+      欢迎 ✨<br>
+      让我们把你的<em>品牌故事</em>讲好。
+    </h1>
+    <p class="welcome-sub">
+      这份资料表大约 15-20 分钟完成<br>
+      填完我会在 48 小时内交付你的专属 Landing Page
+    </p>
+    <div class="welcome-meta">
+      <div class="meta-item"><strong>48h</strong> 快速交付</div>
+      <div class="meta-item"><strong>1</strong> 次整合修改</div>
+      <div class="meta-item"><strong>30天</strong> 小修免费</div>
+    </div>
+  </div>
+</div>
+
+<div class="form-wrap">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading your form...</div>
+  </div>
+  
+  <iframe
+    data-tally-src="https://tally.so/embed/VL9GYy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+    class="tally-iframe"
+    loading="lazy"
+    width="100%"
+    height="1400"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    title="Flow AI 资料收集表"
+    onload="document.getElementById('loadingOverlay').classList.add('hidden')"
+  ></iframe>
+</div>
+
+<div class="bottom-sig">
+  <div class="logo-s"><span>FLOW AI</span>Consulting</div>
+  <div>让美好的品牌被看见 · KL · MY</div>
+</div>
+
+<script>
+setTimeout(()=>{
+  const l = document.getElementById('loadingOverlay');
+  if(l) l.classList.add('hidden');
+},1500);
+</script>
+
+</body>
+</html>
