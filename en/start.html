@@ -1,42 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ============================================ -->
-<!-- SEO + 社交分享 META TAGS -->
+<!-- SEO + Social Sharing META TAGS -->
 <!-- ============================================ -->
 
-<title>Flow AI · 资料收集表 ✨</title>
-<meta name="description" content="欢迎成为 Flow AI 体验官 ✨ 填完资料后 48h 内交付你的专属 landing page。RM168 首批10位限定。">
+<title>Welcome ✨ Let's Build Your Landing Page · Flow AI Consulting</title>
+<meta name="description" content="You've made it official — welcome to Flow AI. Take 15 minutes to fill out this brief, and your landing page will be ready in 48 hours.">
 
 <!-- hreflang -->
 <link rel="alternate" hreflang="zh" href="https://flow-ai-consulting.netlify.app/start">
 <link rel="alternate" hreflang="en" href="https://flow-ai-consulting.netlify.app/en/start">
 <link rel="alternate" hreflang="x-default" href="https://flow-ai-consulting.netlify.app/start">
 
-<!-- Open Graph (WhatsApp / FB / LinkedIn) -->
+<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Flow AI · Landing Page 资料收集 ✨">
-<meta property="og:description" content="欢迎体验官 ✨ 填完资料 · 48h 交付你的专属 landing page。">
+<meta property="og:title" content="Flow AI · Landing Page Brief ✨">
+<meta property="og:description" content="Welcome to the beta ✨ Fill the brief · Your landing page in 48 hours.">
 <meta property="og:image" content="https://flow-ai-consulting.netlify.app/assets/og-image-v2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://flow-ai-consulting.netlify.app/start">
+<meta property="og:url" content="https://flow-ai-consulting.netlify.app/en/start">
 <meta property="og:site_name" content="Flow AI Consulting">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
 
-<!-- Twitter / X -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Flow AI · Landing Page 资料收集 ✨">
-<meta name="twitter:description" content="欢迎体验官 ✨ 填完资料 · 48h 交付。">
+<meta name="twitter:title" content="Flow AI · Landing Page Brief ✨">
+<meta name="twitter:description" content="Welcome to the beta ✨ Fill the brief · 48h delivery.">
 <meta name="twitter:image" content="https://flow-ai-consulting.netlify.app/assets/og-image-v2.jpg">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Noto+Serif+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -46,7 +47,7 @@
   --line:#d8cfbf;
 }
 html,body{min-height:100vh;background:var(--bg)}
-body{font-family:'Noto Serif SC',sans-serif;color:var(--ink);line-height:1.6}
+body{font-family:'Inter',sans-serif;color:var(--ink);line-height:1.6}
 
 .top-brand{
   background:linear-gradient(180deg,var(--bg) 0%,var(--bg-alt) 100%);
@@ -82,13 +83,18 @@ body{font-family:'Noto Serif SC',sans-serif;color:var(--ink);line-height:1.6}
   margin-bottom:20px;
 }
 .welcome-title{
-  font-family:'Noto Serif SC',serif;font-weight:700;
+  font-family:'Playfair Display',serif;font-weight:600;
   font-size:clamp(26px,4vw,38px);line-height:1.25;
   margin-bottom:14px;letter-spacing:-.01em;
 }
 .welcome-title em{
   font-family:'Playfair Display',serif;font-style:italic;
   color:var(--gold-deep);font-weight:500;
+}
+.welcome-tagline{
+  font-family:'Playfair Display',serif;font-style:italic;
+  color:var(--gold-deep);font-size:16px;margin-bottom:14px;
+  font-weight:500;
 }
 .welcome-sub{
   font-size:15px;color:var(--ink-soft);font-weight:400;
@@ -179,25 +185,26 @@ body{font-family:'Noto Serif SC',sans-serif;color:var(--ink);line-height:1.6}
 
 <div class="top-brand">
   <div class="lang-switcher">
-    <a href="/start" class="lang-link active">中文</a>
+    <a href="/start" class="lang-link">中文</a>
     <span class="divider">/</span>
-    <a href="/en/start" class="lang-link">EN</a>
+    <a href="/en/start" class="lang-link active">EN</a>
   </div>
   <div class="brand-content">
     <div class="brand-logo"><span>FLOW AI</span>Consulting</div>
-    <div class="welcome-badge">体验官专属</div>
+    <div class="welcome-badge">Welcome, Beta Customer</div>
     <h1 class="welcome-title">
-      欢迎 ✨<br>
-      让我们把你的<em>品牌故事</em>讲好。
+      Welcome ✨<br>
+      Let's bring your <em>brand to life.</em>
     </h1>
+    <div class="welcome-tagline">This brief takes 15–20 minutes.</div>
     <p class="welcome-sub">
-      这份资料表大约 15-20 分钟完成<br>
-      填完我会在 48 小时内交付你的专属 Landing Page
+      Once you submit, I'll deliver your landing page within 48 hours.<br>
+      Take your time — fill it out when you can think clearly. You can save and continue later.
     </p>
     <div class="welcome-meta">
-      <div class="meta-item"><strong>48h</strong> 快速交付</div>
-      <div class="meta-item"><strong>1</strong> 次整合修改</div>
-      <div class="meta-item"><strong>30天</strong> 小修免费</div>
+      <div class="meta-item"><strong>48h</strong> Delivery</div>
+      <div class="meta-item"><strong>1</strong> Round of edits</div>
+      <div class="meta-item"><strong>30 days</strong> Free updates</div>
     </div>
   </div>
 </div>
@@ -207,7 +214,8 @@ body{font-family:'Noto Serif SC',sans-serif;color:var(--ink);line-height:1.6}
     <div class="spinner"></div>
     <div class="loading-text">Loading your form...</div>
   </div>
-  
+
+  <!-- TODO: Replace with English Tally form ID once ready -->
   <iframe
     data-tally-src="https://tally.so/embed/VL9GYy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
     class="tally-iframe"
@@ -217,14 +225,14 @@ body{font-family:'Noto Serif SC',sans-serif;color:var(--ink);line-height:1.6}
     frameborder="0"
     marginheight="0"
     marginwidth="0"
-    title="Flow AI 资料收集表"
+    title="Flow AI Brief"
     onload="document.getElementById('loadingOverlay').classList.add('hidden')"
   ></iframe>
 </div>
 
 <div class="bottom-sig">
   <div class="logo-s"><span>FLOW AI</span>Consulting</div>
-  <div>让美好的品牌被看见 · KL · MY</div>
+  <div>Building thoughtful digital homes · KL · MY</div>
 </div>
 
 <script>

@@ -38,3 +38,8 @@
   from = "/start"
   to = "/start.html"
   status = 200
+
+[[redirects]]
+  from = "/en/start"
+  to = "/en/start.html"
+  status = 200
