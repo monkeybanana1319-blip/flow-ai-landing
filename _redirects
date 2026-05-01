@@ -1,11 +1,12 @@
-# Cloudflare Pages redirects (Netlify-compatible format)
+# Cloudflare Pages redirects
 # Format: <from>  <to>  <status>
-# 200 = rewrite (URL stays the same in browser)
-# 301/302 = redirect (browser sees new URL)
+# 301/302 = browser-visible redirect; 200 = rewrite (URL stays the same)
 
 # WhatsApp shortcut
 /wa  https://wa.me/601133151341  302
 
-# Pretty URLs for form pages (rewrite — browser keeps /start, server serves /start.html)
-/start       /start.html       200
-/en/start    /en/start.html    200
+# NOTE: We do NOT need /start -> /start.html or /en/start -> /en/start.html
+# rewrites here. Cloudflare Pages auto-strips the .html extension, so
+# /start already serves start.html out of the box. Adding an explicit
+# rewrite causes ERR_TOO_MANY_REDIRECTS because Pages bounces /start.html
+# back to /start (308) which then re-triggers the rewrite — infinite loop.
