@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects (Netlify-compatible format)
+# Format: <from>  <to>  <status>
+# 200 = rewrite (URL stays the same in browser)
+# 301/302 = redirect (browser sees new URL)
+
+# WhatsApp shortcut
+/wa  https://wa.me/601133151341  302
+
+# Pretty URLs for form pages (rewrite — browser keeps /start, server serves /start.html)
+/start       /start.html       200
+/en/start    /en/start.html    200

@@ -1,0 +1,25 @@
+# Cloudflare Pages headers (Netlify-compatible format)
+# Path patterns are matched in order; later rules override earlier ones.
+# Indent header lines with 2 spaces.
+
+# Security headers — apply to everything
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Long-cache static assets (1 year, immutable)
+# Note: combined with ?v=N query strings in HTML for cache-busting on changes.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML must always revalidate so deploys are picked up immediately
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
