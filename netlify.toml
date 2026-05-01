@@ -43,3 +43,10 @@
   from = "/en/start"
   to = "/en/start.html"
   status = 200
+
+# Forward all old Netlify traffic to Cloudflare Pages permanently
+[[redirects]]
+  from = "/*"
+  to = "https://flow-ai-landing.pages.dev/:splat"
+  status = 301
+  force = true
