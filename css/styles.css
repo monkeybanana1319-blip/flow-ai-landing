@@ -321,33 +321,39 @@ section{padding:90px 0;position:relative}
 .gms-m-grid>div:nth-child(3){background:linear-gradient(135deg,#b88e60,#8a6a3d)}
 .gms-m-grid>div:nth-child(4){background:linear-gradient(135deg,#d4b896,#b89068)}
 
-/* Lynn Fae mockup — same frame, slightly differentiated palette (warm earth + soft sage accent) */
-.lf-d-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid rgba(176,141,87,.15)}
-.lf-d-logo{font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:500;letter-spacing:2px;color:#1a1410}
-.lf-d-logo em{font-style:italic;color:#b08d57;font-weight:400;margin-left:4px}
-.lf-d-menu{display:flex;gap:10px;font-family:'Inter',sans-serif;font-size:6px;letter-spacing:1.5px;color:#5a4e40;text-transform:uppercase}
-.lf-d-hero{padding:20px 14px 16px;text-align:center;position:relative}
-.lf-d-hero::before{content:'';position:absolute;top:10px;right:10px;width:40px;height:40px;border:1px solid rgba(176,141,87,.3);border-radius:50%}
-.lf-d-tag{font-family:'Inter',sans-serif;font-size:6.5px;letter-spacing:3px;color:#8a6a3d;margin-bottom:8px}
-.lf-d-title{font-family:'Playfair Display',serif;font-size:26px;line-height:1.05;font-weight:400;margin-bottom:8px;color:#1a1410}
-.lf-d-title em{font-style:italic;color:#b08d57;font-weight:500}
-.lf-d-sub{font-size:7.5px;color:#5a4e40;margin-bottom:12px;letter-spacing:1px}
-.lf-d-btn{display:inline-block;padding:7px 14px;background:#1a1410;color:#faf6ee;font-size:7px;letter-spacing:2px;font-family:'Inter',sans-serif}
-.lf-d-services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(176,141,87,.15);padding:1px}
-.lf-d-s{background:#faf6ee;padding:10px 8px;font-family:'Cormorant Garamond',serif;font-size:10px;color:#1a1410;display:flex;align-items:center;gap:8px;font-style:italic}
-.lf-d-s span{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:#b08d57;font-weight:500}
+/* Lynn Fae mockup — same frame, palette echoes the real lynnfae-legacy site (warm cream + deep evergreen + gold) */
+.lf-d-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid rgba(94,112,72,.18)}
+.lf-d-logo{font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:500;letter-spacing:2px;color:#1a2418}
+.lf-d-logo em{font-style:italic;color:#5e7048;font-weight:400;margin-left:4px}
+.lf-d-menu{display:flex;gap:10px;font-family:'Inter',sans-serif;font-size:6px;letter-spacing:1.5px;color:#4a5440;text-transform:uppercase}
+.lf-d-hero{padding:18px 14px 14px;text-align:center;position:relative}
+.lf-d-portrait{width:38px;height:38px;border-radius:50%;margin:0 auto 8px;background:radial-gradient(circle at 40% 35%,#d8bb96 0%,#a8845a 55%,#5e4628 100%);box-shadow:inset 0 -3px 5px rgba(0,0,0,.18),0 2px 4px rgba(0,0,0,.15);position:relative;overflow:hidden}
+.lf-d-portrait::after{content:'';position:absolute;left:50%;bottom:-6px;width:22px;height:14px;background:#1a2418;border-radius:50% 50% 0 0;transform:translateX(-50%)}
+.lf-d-tag{font-family:'Inter',sans-serif;font-size:6.5px;letter-spacing:3px;color:#7a8a5c;margin-bottom:6px}
+.lf-d-title{font-family:'Playfair Display',serif;font-size:22px;line-height:1.1;font-weight:400;margin-bottom:6px;color:#1a2418}
+.lf-d-title em{font-style:italic;color:#5e7048;font-weight:500}
+.lf-d-sub{font-size:7px;color:#4a5440;margin-bottom:10px;letter-spacing:.8px}
+.lf-d-btn{display:inline-block;padding:6px 12px;background:#1a2418;color:#f5f1e8;font-size:7px;letter-spacing:2px;font-family:'Inter',sans-serif}
+.lf-d-services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(94,112,72,.18);padding:1px}
+.lf-d-s{background:#faf6ee;padding:10px 8px;font-family:'Cormorant Garamond',serif;font-size:10px;color:#1a2418;display:flex;align-items:center;gap:8px;font-style:italic}
+.lf-d-s span{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:#5e7048;font-weight:500}
 
-.lf-m-tag{font-family:'Inter',sans-serif;font-size:5px;letter-spacing:2px;color:#8a6a3d;text-align:center;margin-bottom:6px}
-.lf-m-title{font-family:'Playfair Display',serif;font-size:18px;line-height:1;text-align:center;font-weight:400;margin-bottom:8px}
-.lf-m-title em{font-style:italic;color:#b08d57}
-.lf-m-img{height:40px;background:linear-gradient(135deg,#a8b58a,#5e7048);margin-bottom:8px;position:relative;overflow:hidden}
-.lf-m-img::after{content:'🌳';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:22px;opacity:.7}
-.lf-m-btn{background:#1a1410;color:#faf6ee;text-align:center;padding:5px;font-size:5.5px;letter-spacing:1.5px;margin-bottom:8px}
+.lf-m-tag{font-family:'Inter',sans-serif;font-size:5px;letter-spacing:2px;color:#7a8a5c;text-align:center;margin-bottom:6px}
+.lf-m-title{font-family:'Playfair Display',serif;font-size:17px;line-height:1;text-align:center;font-weight:400;margin-bottom:8px;color:#1a2418}
+.lf-m-title em{font-style:italic;color:#5e7048}
+.lf-m-img{height:42px;background:linear-gradient(135deg,#3d4a30 0%,#1a2418 100%);margin-bottom:8px;position:relative;overflow:hidden}
+.lf-m-img::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(212,165,116,.25),transparent 60%)}
+.lf-m-img::after{
+  content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 42'><g fill='none' stroke='%23d4a574' stroke-width='1' stroke-linecap='round'><path d='M30 38 L30 22'/><path d='M30 22 C26 18 22 16 18 14 M30 22 C34 18 38 16 42 14 M30 26 C27 23 24 22 21 20 M30 26 C33 23 36 22 39 20 M30 18 C28 14 26 12 24 10 M30 18 C32 14 34 12 36 10'/><path d='M28 38 C26 36 24 35 22 35 M32 38 C34 36 36 35 38 35'/></g></svg>");
+  background-size:contain;background-position:center;background-repeat:no-repeat;opacity:.95;
+}
+.lf-m-btn{background:#1a2418;color:#f5f1e8;text-align:center;padding:5px;font-size:5.5px;letter-spacing:1.5px;margin-bottom:8px}
 .lf-m-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
-.lf-m-grid>div{aspect-ratio:1;background:linear-gradient(135deg,#c9a27a,#8a6a3d)}
-.lf-m-grid>div:nth-child(2){background:linear-gradient(135deg,#a8b58a,#7a8a5c)}
-.lf-m-grid>div:nth-child(3){background:linear-gradient(135deg,#d4b896,#b89068)}
-.lf-m-grid>div:nth-child(4){background:linear-gradient(135deg,#7a8a5c,#5e7048)}
+.lf-m-grid>div{aspect-ratio:1;background:linear-gradient(135deg,#d4b896,#a8845a);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:#5e4628}
+.lf-m-grid>div:nth-child(2){background:linear-gradient(135deg,#7a8a5c,#3d4a30);color:#f5f1e8}
+.lf-m-grid>div:nth-child(3){background:linear-gradient(135deg,#3d4a30,#1a2418);color:#d4a574}
+.lf-m-grid>div:nth-child(4){background:linear-gradient(135deg,#c9a27a,#8a6a3d);color:#1a2418}
 
 @media(max-width:500px){.device-desktop{width:240px}.device-mobile{width:80px;right:10px}}
 
