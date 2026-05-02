@@ -53,6 +53,67 @@
 <!-- Stylesheet -->
 <link rel="stylesheet" href="../css/styles.css?v=3">
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1810213303272334');
+fbq('track', 'PageView');
+
+// ========== 自定义事件追踪 ==========
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. 追踪 WhatsApp 点击（高意向客户）
+  const waLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"], a[href*="api.whatsapp"]');
+  waLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      fbq('track', 'Contact');
+      fbq('trackCustom', 'WhatsAppClick', {
+        source: 'flow_ai_landing',
+        button_text: link.innerText.trim().substring(0, 50)
+      });
+    });
+  });
+
+  // 2. 追踪滚动深度（50% 和 90%）
+  let scroll50 = false, scroll90 = false;
+  window.addEventListener('scroll', function() {
+    const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (scrollPercent >= 50 && !scroll50) {
+      scroll50 = true;
+      fbq('trackCustom', 'Scroll50');
+    }
+    if (scrollPercent >= 90 && !scroll90) {
+      scroll90 = true;
+      fbq('trackCustom', 'Scroll90');
+      fbq('track', 'ViewContent');
+    }
+  });
+
+  // 3. 追踪停留 30 秒以上（高质量访客）
+  setTimeout(function() {
+    fbq('trackCustom', 'Engaged30s');
+  }, 30000);
+
+  // 4. 追踪表单提交（如果有）
+  const forms = document.querySelectorAll('form');
+  forms.forEach(function(form) {
+    form.addEventListener('submit', function() {
+      fbq('track', 'Lead');
+    });
+  });
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1810213303272334&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body>
 <nav>
