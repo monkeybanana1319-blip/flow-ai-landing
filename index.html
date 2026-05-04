@@ -160,6 +160,67 @@ src="https://www.facebook.com/tr?id=1810213303272334&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+<!-- Google Analytics 4 (GA4) - Flow AI Landing -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LX8EC6L2NG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LX8EC6L2NG');
+
+  // ========== GA4 自定义事件追踪 ==========
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // 1. 追踪 WhatsApp 点击
+    const waLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"], a[href*="api.whatsapp"]');
+    waLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'whatsapp_click', {
+          'event_category': 'engagement',
+          'event_label': link.innerText.trim().substring(0, 50),
+          'source': 'flow_ai_landing'
+        });
+      });
+    });
+
+    // 2. 追踪滚动深度
+    let scroll50 = false, scroll90 = false;
+    window.addEventListener('scroll', function() {
+      const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercent >= 50 && !scroll50) {
+        scroll50 = true;
+        gtag('event', 'scroll_50', {
+          'event_category': 'engagement'
+        });
+      }
+      if (scrollPercent >= 90 && !scroll90) {
+        scroll90 = true;
+        gtag('event', 'scroll_90', {
+          'event_category': 'engagement'
+        });
+      }
+    });
+
+    // 3. 追踪停留 30 秒以上
+    setTimeout(function() {
+      gtag('event', 'engaged_30s', {
+        'event_category': 'engagement'
+      });
+    }, 30000);
+
+    // 4. 追踪表单提交
+    const forms = document.querySelectorAll('form');
+    forms.forEach(function(form) {
+      form.addEventListener('submit', function() {
+        gtag('event', 'generate_lead', {
+          'event_category': 'conversion'
+        });
+      });
+    });
+  });
+</script>
+<!-- End Google Analytics 4 -->
+
 </head>
 <body>
 <nav>
