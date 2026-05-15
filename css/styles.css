@@ -392,6 +392,50 @@ section{padding:90px 0;position:relative}
 .npa-m-grid>div:nth-child(3){background:linear-gradient(135deg,#b87355,#7a4530);color:#faf6ee}
 .npa-m-grid>div:nth-child(4){background:linear-gradient(135deg,#4a5568,#2a3548);color:#dccfb8}
 
+/* Simon Yan / 一人一师 mockup — dark luxury (charcoal + cream + warm gold), mirrors real site */
+.sy-d-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid rgba(200,169,106,.25)}
+.sy-d-logo{font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:500;letter-spacing:3px;color:#f5f0e8}
+.sy-d-logo em{font-style:italic;color:#c8a96a;font-weight:400;margin-left:4px}
+.sy-d-menu{display:flex;gap:10px;font-family:'Inter',sans-serif;font-size:6px;letter-spacing:1.5px;color:rgba(245,240,232,.55);text-transform:uppercase}
+.sy-d-hero{padding:18px 14px 14px;text-align:center;position:relative}
+.sy-d-seal{
+  width:42px;height:42px;margin:0 auto 8px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#e6c887 0%,#c8a96a 50%,#8a6d3a 100%);
+  box-shadow:inset 0 -2px 4px rgba(0,0,0,.3),0 1px 3px rgba(200,169,106,.4);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-style:italic;font-size:14px;font-weight:600;
+  color:#0a0808;letter-spacing:0;
+}
+.sy-d-tag{font-family:'Inter',sans-serif;font-size:6.5px;letter-spacing:3px;color:#c8a96a;margin-bottom:6px}
+.sy-d-title{font-family:'Playfair Display',serif;font-size:20px;line-height:1.1;font-weight:400;margin-bottom:6px;color:#f5f0e8}
+.sy-d-title em{font-style:italic;color:#c8a96a;font-weight:500}
+.sy-d-sub{font-size:7px;color:rgba(245,240,232,.7);margin-bottom:10px;letter-spacing:.8px}
+.sy-d-btn{display:inline-block;padding:6px 12px;background:linear-gradient(135deg,#e6c887,#c8a96a);color:#0a0808;font-size:7px;letter-spacing:2px;font-family:'Inter',sans-serif;font-weight:500}
+.sy-d-services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(200,169,106,.25);padding:1px}
+.sy-d-s{background:#0a0808;padding:10px 8px;font-family:'Cormorant Garamond',serif;font-size:10px;color:#f5f0e8;display:flex;align-items:center;gap:8px;font-style:italic}
+.sy-d-s span{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:#c8a96a;font-weight:500}
+
+/* Simon Yan desktop screen needs dark base instead of cream */
+.device-desktop.sy-frame .device-screen{background:linear-gradient(180deg,#0a0808,#1a1410);color:#f5f0e8}
+.device-mobile.sy-frame .mobile-screen{background:linear-gradient(180deg,#0a0808,#1a1410);color:#f5f0e8}
+
+.sy-m-tag{font-family:'Inter',sans-serif;font-size:5px;letter-spacing:2px;color:#c8a96a;text-align:center;margin-bottom:6px}
+.sy-m-title{font-family:'Playfair Display',serif;font-size:17px;line-height:1.05;text-align:center;font-weight:400;margin-bottom:8px;color:#f5f0e8}
+.sy-m-title em{font-style:italic;color:#c8a96a}
+.sy-m-img{height:42px;background:linear-gradient(180deg,#1a1410 0%,#0a0808 100%);margin-bottom:8px;position:relative;overflow:hidden;border:1px solid rgba(200,169,106,.25)}
+.sy-m-img::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 100%,rgba(200,169,106,.4),transparent 70%)}
+.sy-m-img::after{
+  content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 42'><g fill='none' stroke='%23c8a96a' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><circle cx='30' cy='21' r='12'/><circle cx='30' cy='21' r='8'/><path d='M30 13 L30 9 M30 33 L30 29 M22 21 L18 21 M42 21 L38 21'/><path d='M30 21 L34 17' stroke-width='1.5'/><circle cx='30' cy='21' r='1.5' fill='%23c8a96a'/></g></svg>");
+  background-size:contain;background-position:center;background-repeat:no-repeat;opacity:.95;
+}
+.sy-m-btn{background:linear-gradient(135deg,#e6c887,#c8a96a);color:#0a0808;text-align:center;padding:5px;font-size:5.5px;letter-spacing:1.5px;margin-bottom:8px;font-weight:500}
+.sy-m-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.sy-m-grid>div{aspect-ratio:1;background:linear-gradient(135deg,#c8a96a,#8a6d3a);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:#0a0808}
+.sy-m-grid>div:nth-child(2){background:linear-gradient(135deg,#1a1410,#0a0808);color:#c8a96a;border:1px solid rgba(200,169,106,.3)}
+.sy-m-grid>div:nth-child(3){background:linear-gradient(135deg,#3a2e1c,#1a1410);color:#e6c887}
+.sy-m-grid>div:nth-child(4){background:linear-gradient(135deg,#e6c887,#c8a96a);color:#0a0808}
+
 @media(max-width:500px){.device-desktop{width:240px}.device-mobile{width:80px;right:10px}}
 
 .featured-badge{position:absolute;top:30px;left:30px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;color:var(--gold);letter-spacing:3px;padding:6px 14px;border:1px solid var(--gold);z-index:3;text-transform:uppercase}
