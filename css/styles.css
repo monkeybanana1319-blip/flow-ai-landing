@@ -355,6 +355,43 @@ section{padding:90px 0;position:relative}
 .lf-m-grid>div:nth-child(3){background:linear-gradient(135deg,#3d4a30,#1a2418);color:#d4a574}
 .lf-m-grid>div:nth-child(4){background:linear-gradient(135deg,#c9a27a,#8a6a3d);color:#1a2418}
 
+/* NPA Homes mockup — same frame, navy + warm terracotta (property advisory tone) */
+.npa-d-nav{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid rgba(26,35,50,.14)}
+.npa-d-logo{font-family:'Cormorant Garamond',serif;font-size:11px;font-weight:600;letter-spacing:2.5px;color:#1a2332}
+.npa-d-logo em{font-style:italic;color:#b87355;font-weight:400;margin-left:4px}
+.npa-d-menu{display:flex;gap:10px;font-family:'Inter',sans-serif;font-size:6px;letter-spacing:1.5px;color:#4a5568;text-transform:uppercase}
+.npa-d-hero{padding:18px 14px 14px;text-align:center;position:relative}
+.npa-d-houseicon{
+  width:46px;height:32px;margin:0 auto 6px;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 32'><g fill='none' stroke='%23b87355' stroke-width='1.5' stroke-linejoin='round'><path d='M4 28 L4 16 L23 4 L42 16 L42 28 Z' fill='%23faf6ee'/><line x1='2' y1='28' x2='44' y2='28'/><rect x='10' y='20' width='6' height='8' fill='%231a2332'/><rect x='22' y='15' width='4' height='4' fill='%231a2332'/><rect x='30' y='15' width='4' height='4' fill='%231a2332'/></g></svg>");
+  background-size:contain;background-position:center;background-repeat:no-repeat;
+}
+.npa-d-tag{font-family:'Inter',sans-serif;font-size:6.5px;letter-spacing:3px;color:#b87355;margin-bottom:6px}
+.npa-d-title{font-family:'Playfair Display',serif;font-size:20px;line-height:1.15;font-weight:400;margin-bottom:6px;color:#1a2332}
+.npa-d-title em{font-style:italic;color:#b87355;font-weight:500}
+.npa-d-sub{font-size:7px;color:#4a5568;margin-bottom:10px;letter-spacing:.8px}
+.npa-d-btn{display:inline-block;padding:6px 12px;background:#1a2332;color:#faf6ee;font-size:7px;letter-spacing:2px;font-family:'Inter',sans-serif}
+.npa-d-services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(184,115,85,.18);padding:1px}
+.npa-d-s{background:#faf6ee;padding:10px 8px;font-family:'Cormorant Garamond',serif;font-size:10px;color:#1a2332;display:flex;align-items:center;gap:8px;font-style:italic}
+.npa-d-s span{font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:#b87355;font-weight:500}
+
+.npa-m-tag{font-family:'Inter',sans-serif;font-size:5px;letter-spacing:2px;color:#b87355;text-align:center;margin-bottom:6px}
+.npa-m-title{font-family:'Playfair Display',serif;font-size:16px;line-height:1.05;text-align:center;font-weight:400;margin-bottom:8px;color:#1a2332}
+.npa-m-title em{font-style:italic;color:#b87355}
+.npa-m-img{height:42px;background:linear-gradient(180deg,#3a4a5e 0%,#1a2332 100%);margin-bottom:8px;position:relative;overflow:hidden}
+.npa-m-img::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(196,133,107,.4),transparent 55%)}
+.npa-m-img::after{
+  content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 42'><g fill='none' stroke='%23dccfb8' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'><path d='M14 32 L14 22 L22 16 L30 22 L30 32 Z'/><path d='M30 32 L30 18 L40 12 L48 18 L48 32 Z'/><line x1='10' y1='32' x2='52' y2='32'/><rect x='17' y='25' width='3' height='4'/><rect x='35' y='22' width='3' height='5'/><rect x='42' y='22' width='3' height='5'/></g></svg>");
+  background-size:contain;background-position:center;background-repeat:no-repeat;opacity:.95;
+}
+.npa-m-btn{background:#1a2332;color:#faf6ee;text-align:center;padding:5px;font-size:5.5px;letter-spacing:1.5px;margin-bottom:8px}
+.npa-m-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.npa-m-grid>div{aspect-ratio:1;background:linear-gradient(135deg,#dccfb8,#b87355);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;font-size:11px;color:#1a2332}
+.npa-m-grid>div:nth-child(2){background:linear-gradient(135deg,#3a4a5e,#1a2332);color:#dccfb8}
+.npa-m-grid>div:nth-child(3){background:linear-gradient(135deg,#b87355,#7a4530);color:#faf6ee}
+.npa-m-grid>div:nth-child(4){background:linear-gradient(135deg,#4a5568,#2a3548);color:#dccfb8}
+
 @media(max-width:500px){.device-desktop{width:240px}.device-mobile{width:80px;right:10px}}
 
 .featured-badge{position:absolute;top:30px;left:30px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;color:var(--gold);letter-spacing:3px;padding:6px 14px;border:1px solid var(--gold);z-index:3;text-transform:uppercase}
